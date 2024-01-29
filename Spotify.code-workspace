@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"name": "Spotify",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Spotify",
+		"liveServer.settings.port": 5501
+	}
+}
