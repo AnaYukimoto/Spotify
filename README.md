@@ -13,7 +13,7 @@ O projeto ainda está em desenvolvimento ativo. Constantemente, novas funcionali
 
 ## Captura de Tela do Projeto
 
-![Imagem do Projeto Spotify Clone](https://anayukimoto.github.io/Spotify)
+![Imagem do Projeto Spotify Clone](./imgSiteSpotify.png)
 
 ## Acesso ao Projeto
 
