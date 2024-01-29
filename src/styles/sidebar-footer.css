@@ -14,15 +14,14 @@ h1{
     top: 0;
     left: 0;
     bottom: 0;
-    padding: 10px;
-    width: 300px;
+    padding: 8px;
+    width: 312px;
 }
 
 .sidebar__navigation{
     background-color: var(--bg-black);
     border-radius: 8px;
     padding: 20px 0 0 20px;
-
 }
 
 .sidebar__navigation .logo{
@@ -33,11 +32,10 @@ h1{
 
 .sidebar__navigation .logo img{
     width:80px;
-
 }
 
 .sidebar nav ul{
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
 .sidebar ul li {
@@ -48,16 +46,15 @@ h1{
     color: var(--bg-white);
     text-decoration: none;
     font-weight: 600;
-    font-size: 16px;
-    
+    font-size: 16px;  
 }
 
 .sidebar nav ul li a:hover {
     color: var( --color-white);
 }
 
-.sidebar nav ul li a .icon-with-text i {
-    padding-right: 15px; 
+.sidebar nav ul li a span{
+    margin-right: 15px;
 }
 
 /*LIBRARY*/
@@ -72,7 +69,7 @@ h1{
     color: var(--bg-white);
     font-weight: 600;
     font-size: 14px;
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
 .library .library__content{
@@ -93,9 +90,10 @@ h1{
     text-decoration: none;
     text-transform: none;
     padding: 20px 10px;
+   
 }
 
-.library  .library__button :hover {
+.library  .library__button:hover {
     color: var( --color-white);
 }
 
@@ -122,47 +120,45 @@ h1{
 }
 
 
-.section-playlist{
+.section-playlist {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 20px; /*espaço entre as propriedades*/
-    background-color: #242423;
-    color: var(--bg-white);
+    gap: 20px;
+    background-color: #242424;
+    color: #b3b3b3;
     font-weight: 600;
     font-size: 14px;
     margin: 8px 0;
     padding: 16px 20px;
     border-radius: 10px;
-
+    height: 15px; 
+    overflow-y: auto; 
 }
 
-.section-playlist .section-playlist__content{
+.section-playlist .section-playlist__content {
     display: flex;
     flex-direction: column;
-
 }
 
-.section-playlist__content .text{
+.section-playlist__content .text {
     padding-bottom: 14px;
-    color: var( --color-white);
-
+    color: #fff;
 }
 
-.section-playlist__content .title{
+.section-playlist__content .title {
     font-weight: 700;
-
 }
 
-.section-playlist__content .subtitle{
+.section-playlist__content .subtitle {
     font-weight: 500;
     font-size: 12px;
 }
 
-.section-playlist__content .section-playlist__button{
+.section-playlist__content .section-playlist__button {
     display: flex;
     justify-content: center;
-    background-color: var( --color-white);
+    background-color: #fff;
     color: #000;
     border-radius: 20px;
     font-size: 12px;
@@ -171,42 +167,53 @@ h1{
     text-transform: none;
     padding: 10px;
     margin-top: 12px;
-    border: 0px;
+    border: 0;
     width: 113px;
 }
 
-.sidebar .links{
-    margin: 25px 20px;
+.section-playlist::-webkit-scrollbar {
+    width: 15px; 
+}
+
+.section-playlist::-webkit-scrollbar-thumb {
+    background: #888888b0; 
+    height: 100px;
+}
+
+.sidebar .cookies{
+    margin: 15px 15px 0 15px;
     display: flex;
-    
     flex-wrap: wrap;
-
 }
 
-.sidebar .links a{
-    color: var(--bg-white);
+.sidebar .cookies a{
+    color:#b3b3b3;
     font-weight: 500;
-    font-size: 10px;
+    font-size:11px;
     text-decoration: none;
-    margin-right: 15px;
-    margin-bottom: 15px;
+    margin-right: 15px; 
+    margin-bottom: 20px;
 }
 
+.sidebar .cookies a:hover{
+    text-decoration: underline;
+}
 
+.languages{
+    padding-left:15px ;
+}
 .languages .languages__button{
     align-items: center;
     background-color: transparent;
-    border: 1px solid var(--bg-white);
-    border-radius: 20px;
-    color: var( --color-white);
-    cursor: pointer;
+    border: 1px solid #878787;
+    color:#FFF;
     font-weight: bold;
+    cursor:pointer;
     width: 170px;
-    margin: 0 0 35px 15px;
-    padding: 8px;
+    padding:8px ;
+    border-radius:20px;
+    margin-bottom: 10px;
 }
-
-/*FOOTER*/
 
 .disclaimer-premium {
     position: fixed;
@@ -214,31 +221,33 @@ h1{
     left: 0;
     right: 0;
     background: linear-gradient(to right, #ae2896, #509bf5);
-    padding: 10px 20px;
+    padding: 13px;
     display: flex;
     justify-content: space-between;
-    margin: 10px;
+    margin: 8px;
 }
+
 .disclaimer-premium .text {
-    flex-grow: 1; 
+   flex-shrink: 0;
 
 }
 .disclaimer-premium .disclaimer-premium__title {
-    color: var( --color-white);
-    font-weight: bold;
+    color: #ffffff;
+    font-weight: 400;
     font-size: 14px;
-    margin: 5px 0 10px 0;
+    margin-bottom: 10px;
+    font-weight: 600;
 }
 
 .disclaimer-premium .disclaimer-premium__subtitle {
-    color: var( --color-white);
-    font-size: 15px;
+    color: #ffffff;
+    font-size: 16px;
     font-weight: 500;
 }
 
 .disclaimer-premium button {
-    background-color: var( --color-white);
-    color: var(--color-black);
+    background-color: #ffffff;
+    color: #000000;
     font-size: 16px;
     font-weight: bold;
     padding: 14px 30px;
@@ -246,4 +255,9 @@ h1{
     border-radius: 40px;
     cursor: pointer;
     flex-shrink: 0;
+    width: 200px;
+}
+
+#artistList {
+    display: none;
 }

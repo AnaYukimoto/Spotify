@@ -1,20 +1,17 @@
 .main-container {
     max-width: 80vw;
-    height: 100vh;
+    max-height: 80vw;
     margin-left: 320px;
-    margin-right: 56px;
-
 }
 
 .header__navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px;
-    margin: 10px;
-    border-radius: 8px;
+    margin: 8px 8px 0 8px;
+    border-radius: 8px 8px 0 0;
     background-color: var(--bg-black);
-    padding: 12px;
+    padding: 8px 24px 8px 24px;
 }
 
 .header__navigation .navigation {
@@ -24,7 +21,7 @@
 }
 
 .header__navigation .navigation .arrow-left {
-    margin-right: 1.25rem;
+    margin-right: 0.5rem;
 }
 
 .arrow-left,
@@ -34,7 +31,6 @@
     justify-content: center;
     width: 32px;
     height: 32px;
-    background: var(--bg-icon);
     background-color: var(--bg-arrow-color);
     border-radius: 50%;
     border: none;
@@ -42,7 +38,6 @@
 }
 
 .header__login {
-    
     display: flex;
     align-items: center;
 
@@ -52,24 +47,24 @@
     display: flex;
     align-items: center;
     width: 364px;
-    height: 48px;
+    height: 45px;
     margin-left: 8px;
     background-color: #242424;
     border-radius: 500px;
     border: 1px solid transparent;
-  }
-  
-  .header__search img {
+}
+
+.header__search img {
     width: 16px;
     height: 16px;
     margin-left: 10px;
-  }
-  
-  .header__search input {
+}
+
+.header__search input {
     background: transparent;
     border: none;
     padding: 0px 100px 0 12px;
-    color: var( --color-white);
+    color: var(--color-white);
     text-overflow: ellipsis;
     /*valor de texto grande, sem mostrar tudo com ...*/
     overflow: hidden;
@@ -87,14 +82,278 @@
     margin-right: 32px;
     border: none;
 }
+.header__login .subscribe:hover {
+    color: var(--color-white);
+    transform: scale(1.05);
+}
 
 .header__login .login {
     height: 48px;
-    padding:0 30px;
+    padding: 0 30px;
     background-color: white;
     color: var(--color-black);
     font-size: 16px;
     font-weight: 700;
     border-radius: 40px;
     border: none;
+}
+
+.header__login .login:hover {
+    background-color: rgba(255, 255, 255, 0.944);
+    transform: scale(1.05);
+}
+
+/* PLAYLIST */
+.playlist-container {
+    height: 73vh;
+    padding-top: 1px;
+    margin: 0 8px 8px 8px;
+    border-radius: 0 0 10px 10px;
+    background-color: var(--bg-black);
+    background-image: linear-gradient(to bottom, rgba(62, 62, 62, 0.3) 0%, var(--bg-black) 50%, var(--bg-black) 100%);
+}
+
+.playlist {
+    margin: 0 15px 15px 15px;
+}
+
+.playlist #greeting {
+    color: var(--color-white);
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.playlist .session {
+    color: var(--color-white);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* SCROLL */
+.offer__scroll-container {
+    max-height: calc(77vh - 48px);
+    margin: 24px;
+    overflow-y: auto;
+}
+
+.offer__scroll-container::-webkit-scrollbar {
+    width: 1px;
+}
+
+.offer__scroll-container::-webkit-scrollbar-thumb {
+    background-color:#242424;
+}
+
+/* FIM SCROLL */
+
+.offer__list-item {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 16px;
+    gap: 16px;
+    display: grid;
+    gap: 16px;
+    grid-gap: 32px;
+    margin: 0 auto;
+}
+
+.cards {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.cards span {
+    padding: 16px;
+    position: absolute;
+    color: var(--color-white);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* COLOR CARDS */
+.card1 {
+    background:var(--card1);
+}
+
+.card2 {
+    background:var(--card2);
+}
+
+.card3 {
+    background:var(--card3);
+}
+
+.card4 {
+    background:var(--card4);
+}
+
+.card5 {
+    background:var(--card5);
+}
+
+.card6 {
+    background: var(--card6);
+}
+
+.card7 {
+    background: var(--card7);
+}
+
+.card8 {
+    background: var(--card8);
+}
+
+.card9 {
+    background: var(--card9);
+}
+
+.card10 {
+    background: var(--card9);
+}
+
+.card11 {
+    background: var(--card10);
+}
+
+.card12 {
+    background: var(--card11);
+}
+
+.card13 {
+    background: var(--card12);
+}
+
+.card14 {
+    background:var(--card13);
+}
+
+.card15 {
+    background: var(--card14);
+}
+
+/* FIM COLOR CARDS */
+
+.offer__list-item img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    width: 107px;
+    transform: rotate(25deg) translate(18%, -2%);
+}
+
+/* CARD ARTISTA */
+
+.artist {
+    --column-count: 5;
+    --grid-gap: 24px;
+    --min-container-width: 372px;
+}
+
+.hidden {
+    display: none;
+}
+
+.grid-container {
+    grid-gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    min-width: 767px;
+}
+
+.artist-card {
+    background: #181818;
+    border-radius: 8px;
+    -ms-flex: 1;
+    flex: 1;
+    isolation: isolate;
+    padding: 16px;
+    position: relative;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.artist-card:hover {
+    background-color: #252525;
+}
+
+.card-img {
+    padding-bottom: 100%;
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.artist-img {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-white);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-height: 62px;
+}
+
+.card-text a {
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.artist-name {
+    box-sizing: border-box;
+    margin-block: 0px;
+    font-size: 16px;
+    font-weight: 700;
+    padding-block-end: 8px;
+}
+
+.artist-categorie {
+    color: #6a6a6a;
+    font-weight: 400;
+    font-size: 0.875rem;
+}
+
+.play {
+    position: relative;
+}
+
+.play .fa-play {
+    position: absolute;
+    right: 10px;
+    top: 120px;
+    padding: 18px;
+    background-color: #1db954;
+    border-radius: 100%;
+    font-size: 14px;
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+
+.artist-card:hover .play .fa-play {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.play .fa-play:hover {
+    padding: 20px;
+    cursor: pointer;
+}
+
+#result-artist {
+    padding: 20px 40px;
 }
